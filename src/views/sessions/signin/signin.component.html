@@ -1,0 +1,51 @@
+<div class="container-fluid ">
+    <div class="row">
+      <div class="col-md-4 col-sm-4 col-xs-12">
+      </div>
+      <div class="col-md-4 col-sm-4 col-xs-12">
+          <img class="logo" height="100" width="100" />
+        <form #loginForm="ngForm" (ngSubmit)="login(loginForm)" class="loginForm">
+      <div class="form-group">
+        <label class="labelClass" for="username">Email address</label>
+        <input type="email"
+               name="username"
+               #username="ngModel"
+               [(ngModel)]="_signinService.username"
+               class="form-control"
+               id="username"
+               aria-describedby="emailHelp"
+               placeholder="Enter email"
+               required>
+      </div>
+      <div class="form-group">
+        <label class="labelClass" for="password">Password</label>
+        <input type="password"
+               name="password"
+               #password="ngModel"
+               [(ngModel)]="_signinService.password"
+               class="form-control"
+               id="password"
+               placeholder="Password"
+               required>
+      </div>
+      <button type="submit" class="btn btn-primary btn-block">Login</button>
+      <button class="btn btn-success btn-block" (click)="register()">Register</button>
+        <div class="row iconColor" style="text-align:center;padding:20px;">
+            <div class="col-md-3 col-sm-4 col-xs-4">
+             <i class="fa fa-facebook fa-2x" aria-hidden="true"  (click)="loginWithFacebook()"></i>
+            </div>
+            <div class="col-md-3 col-sm-4 col-xs-4">
+             <i class="fa fa-google fa-2x" aria-hidden="true" (click)="loginWithGoogle()"></i>
+            </div>
+            <div class="col-md-3 col-sm-4 col-xs-4">
+             <i class="fa fa-twitter fa-2x" aria-hidden="true" (click)="loginWithTwitter()"></i>
+            </div>
+            <div class="col-md-3 col-sm-4 col-xs-4">
+             <i class="fa fa-github-alt fa-2x" aria-hidden="true" (click)="loginWithGithub()"></i>
+            </div>
+          </div>
+    </form>
+      </div>
+      <div class="col-md-4 col-sm-4 col-xs-12"></div>
+    </div>
+    </div>

@@ -1,0 +1,39 @@
+.logo{
+		position: absolute;
+		border-radius: 50%;
+		margin:20% 33%;
+		top:-50px;
+}
+
+.loginForm{
+	border:1px solid black;
+	border-radius: 10px;
+	padding: 60px 20px 20px 20px;
+	margin-top:20%;
+-webkit-box-shadow: -2px 7px 48px 3px rgba(0,0,0,0.75);
+-moz-box-shadow: -2px 7px 48px 3px rgba(0,0,0,0.75);
+box-shadow: -2px 7px 48px 3px rgba(0,0,0,0.75);
+border-radius: 88px 0px 106px 42px;
+-moz-border-radius: 88px 0px 106px 42px;
+-webkit-border-radius: 88px 0px 106px 42px;
+border: 0px solid #000000;
+}
+.loginForm .labelClass{
+	font-weight: bold;
+	font-size: 20px;
+	color: white;
+}
+
+
+.loginForm input,a,button{
+	cursor: pointer;
+}
+
+.loginForm a{
+font-size: 20px;
+color: white;
+}
+.loginForm a:hover {
+    color: greenyellow;
+	text-decoration: none;
+}

@@ -1,0 +1,12 @@
+<nav class="navbar" style="background-color: #007bff;">
+  <nav class="nav justify-content-end">
+    <ng-container *ngFor="let cardItem of cardDetails;let i=index;let isLast=last">
+      <a *ngIf="i===0" class="nav-link navbarItem" [routerLink]="['/courses/home']" >Home</a>
+      <a class="nav-link navbarItem" (click)="goToPage(cardItem)">{{cardItem.title}}</a>
+        <app-profile *ngIf="isLast" class="nav-link navbarItem" style="padding-top: 6px;
+    padding-left: 0px;
+    padding-bottom: 0px;
+    padding-right: 0px;"></app-profile>
+</ng-container>
+  </nav>
+</nav>

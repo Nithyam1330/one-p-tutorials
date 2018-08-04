@@ -1,0 +1,61 @@
+<div class="container-fluid">
+      <div class="row">
+        <div class="col-md-4 col-sm-4 col-xs-12">
+        </div>
+        <div class="col-md-4 col-sm-4 col-xs-12">
+            <img class="logo" height="100" width="100" />
+          <form #registerForm="ngForm" (ngSubmit)="register(registerForm)" class="loginForm">
+            <div class="form-group">
+              <label class="labelClass" for="displayName">Name</label>
+              <input type="text"
+                     class="form-control"
+                     name="displayName"
+                     #displayName="ngModel"
+                     id="displayName"
+                     [(ngModel)]="_registerService.displayName"
+                     placeholder="Enter Your Name"
+                     required>
+            </div>
+        <div class="form-group">
+          <label class="labelClass" for="username">Email address</label>
+          <input type="email"
+                 class="form-control"
+                 name="username"
+                 #username="ngModel"
+                 id="username"
+                 [(ngModel)]="_registerService.username"
+                 aria-describedby="emailHelp"
+                 placeholder="Enter email"
+                 required>
+        </div>
+        <div class="form-group">
+          <label class="labelClass" for="password">Password</label>
+          <input type="password"
+                 name="password"
+                 #password="ngModel"
+                 class="form-control"
+                 [(ngModel)]="_registerService.password"
+                 id="password"
+                 placeholder="Password"
+                 required>
+        </div>
+        <div class="form-group">
+          <label class="labelClass" for="rePassword">Repeat Password</label>
+          <input type="password"
+                 name="rePassword"
+                 #rePassword="ngModel"
+                 class="form-control"
+                 id="rePassword"
+                 placeholder="Repeat Password"
+                 [(ngModel)]="_registerService.rePassword"
+                 required>
+        </div>
+        <div class="text-center">
+        <button type="submit" class="btn btn-primary btn-block">Register</button>
+      <button class="btn btn-success btn-block" (click)="goToLogin(registerForm)">Login</button>
+     </div>
+      </form>
+        </div>
+        <div class="col-md-4 col-sm-4 col-xs-12"></div>
+      </div>
+  </div>

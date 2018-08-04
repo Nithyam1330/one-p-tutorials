@@ -1,27 +1,38 @@
-# Tutorials
+## USER DEFINED INSTALLATION 
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.0.
+## CDN links 
 
-## Development server
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## BOOTSTRAP INSTALLATION
 
-## Code scaffolding
+npm install --save bootstrap@4.0.0-alpha.6 font-awesome
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## FIREBASE INSTALLATION :
 
-## Build
+npm install angularfire2 firebase --save
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+Project setup:
 
-## Running unit tests
+Steps 
+1. open the link 
+2. on right corner click direct download 
+3. after downloading copy to your any drive other that c-drive 
+4. extract zip folder.
+5. A tutorial folder will be extracted 
+6. go inside tutorial folder and open command prompt 
+7. in command prompt type following commands 
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
+a. npm install 
+b. npm i @angular-devkit/core
+c. npm rebuild node-sass --force 
+d. give ng serve 
+e. if successfully compiled open browser and type url as "localhost:4200"
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
-## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+link:
+
+https://www.dropbox.com/s/96gr9v4n8y76r85/tutorials.zip?dl=0
+
