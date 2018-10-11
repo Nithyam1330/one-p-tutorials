@@ -5,6 +5,7 @@ import { OneComponent } from './one/one.component';
 import { TwoComponent } from './two/two.component';
 import { ThreeComponent } from './three/three.component';
 import { FourComponent } from './four/four.component';
+import { BloggerComponent } from '../common/blogger/blogger.component';
 
 const routes: Routes = [
   {
@@ -29,6 +30,10 @@ const routes: Routes = [
       {
         path: 'four',
         component: FourComponent
+      },
+      {
+        path: 'blogger',
+        component: BloggerComponent
       }
     ]
   }

@@ -8,12 +8,12 @@ import { AngularFireAuthModule } from 'angularfire2/auth';
 import { RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 
-//user defined imports
+// user defined imports
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 
-//user defined services
+// user defined services
 
 import { AuthService } from '../services/common/auth/auth.service';
 import { CardDetailsService } from '../services/common/cards/card-details.service';
@@ -25,7 +25,7 @@ import { GithubService } from '../services/common/socialMedia/github/github.serv
 import { LoaderService } from '../views/common/loader/loader.service';
 import { SignoutService } from '../services/signout/signout.service';
 
-//user defined components
+// user defined components
 
 import { AuthLayoutComponent } from './auth-layout/auth-layout.component';
 import { AdminLayoutComponent } from './admin-layout/admin-layout.component';

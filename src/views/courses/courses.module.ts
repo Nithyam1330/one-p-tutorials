@@ -7,6 +7,7 @@ import { OneComponent } from './one/one.component';
 import { TwoComponent } from './two/two.component';
 import { ThreeComponent } from './three/three.component';
 import { FourComponent } from './four/four.component';
+import {BloggerComponent} from '../common/blogger/blogger.component';
 
 import { OneService } from './one/one.service';
 import { TwoService } from './two/two.service';
@@ -23,9 +24,10 @@ import { FourService } from './four/four.service';
     OneComponent,
     TwoComponent,
     ThreeComponent,
-    FourComponent
+    FourComponent,
+    BloggerComponent
   ],
-  providers:[
+  providers: [
     OneService,
     TwoService,
     ThreeService,

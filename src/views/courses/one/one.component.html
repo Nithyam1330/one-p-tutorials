@@ -6,7 +6,7 @@
         <div class="card-body" style="background-color: #E0E0E0;padding:10px">
           <h5 class="card-title">{{card.title}}</h5>
           <p class="card-text">{{card.content}}</p>
-          <a [href]="card.buttonLink" target="_blank" class="btn btn-primary btn-block" >{{card.buttonText}}</a>
+          <a (click)="open(card.buttonLink)" class="btn btn-primary btn-block" >{{card.buttonText}}</a>
         </div>
       </div>
     </div>
